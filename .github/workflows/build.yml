@@ -35,6 +35,7 @@ jobs:
         run: |
           sudo apt update
       - name: Upgrade
+        run: |
           sudo apt full-upgrade
           sudo apt upgrade --without-new-pkgs
       - name: Install depencies
