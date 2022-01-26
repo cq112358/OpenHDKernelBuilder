@@ -19,7 +19,7 @@ function init() {
 function package() {
     PACKAGE_NAME=openhd-linux-${PLATFORM}
 
-    VERSION=$(git describe --tags | sed 's/\(.*\)-.*/\1/')
+    VERSION=20220127.1
 
     rm ${PACKAGE_NAME}_${VERSION}_${PACKAGE_ARCH}.deb > /dev/null 2>&1
 
