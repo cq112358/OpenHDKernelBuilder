@@ -58,6 +58,7 @@ build_pi_kernel() {
     pushd ${LINUX_DIR}
 
         echo "Set kernel config"
+        echo "${CONFIGS}/.config-${KERNEL_BRANCH}-${ISA}"
         cp "${CONFIGS}/.config-${KERNEL_BRANCH}-${ISA}" ./.config || exit 1
 
         make clean
